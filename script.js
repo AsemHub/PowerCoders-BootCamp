@@ -1,4 +1,4 @@
-// alert ('hello world')
+/*alert ('hello world')
 const FirstName = "Asem"
 const LastName = "Alakabani"
 let fullName = FirstName + " " + LastName
@@ -12,7 +12,7 @@ const City = "Torino"
 const province = "TO"
 const Nation = "Italy"
 let address = Street + ", " + StreetNumber + "\n" + Cap + " " + City + " (" + province + ")\n" + Nation
-console.log (address + '\n' + myAddress)
+//console.log (address + '\n' + myAddress)
 let admin 
 let name ="Jhon"
 admin = "Jhon"
@@ -21,7 +21,7 @@ admin = "Jhon"
 let newAddress =`${Street}, ${StreetNumber}
 ${Cap} ${City} (${province})
 ${Nation}`
-console.log(newAddress)
+//console.log(newAddress)
 
 const FName = 'First Name: Asem'
 const LName = 'Last Name Alakabani'
@@ -35,4 +35,26 @@ ${Nationality}
 ${Education}
 ${SoftSkills}
 ${Languages}`
-console.log(CV)
+
+const x = 5
+const y = 7
+const z = x - y 
+
+const a = '3'
+const b = '4'
+
+console.log(`${address}
+${newAddress}
+${CV}
+${z}
+${(a + b)}`
+
+)*/
+const x = 1
+const y = 4.5
+const z = 'asem'
+const w = 2 > 1
+const u = undefined
+const o = null
+const i = 0/0 
+console.log(typeof i)
