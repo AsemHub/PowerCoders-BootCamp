@@ -49,7 +49,7 @@ ${CV}
 ${z}
 ${(a + b)}`
 
-)*/
+)
 const x = 1
 const y = 4.5
 const z = 'asem'
@@ -57,4 +57,4 @@ const w = 2 > 1
 const u = undefined
 const o = null
 const i = 0/0 
-console.log(typeof i)
+console.log(typeof i)*/
