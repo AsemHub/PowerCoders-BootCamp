@@ -116,12 +116,69 @@
 
 // }
 
-for (let j=1; j<11; j++) {
+// for (let j=1; j<11; j++) {
+//         let result = ""
+//         let result2 = `Table of =>(${j})` 
+//         for (let i = 1; i < 11; i++) {
+//                 result = `${i}x${j}=${i*j}|`
+//                 result2 += result
+//         }
+//         console.log(result2)
+//         }
+
+/*
+
+*********
+*       *
+* Hello *
+*       *
+*********
+
+*/
+
+
+// for (let j=1; j<11; j++) {
+//         let result = ""
+//         let result2 =`Table of => (${j})` 
+//         for (let i = 1; i < 11; i++) {
+//                 result2 += result
+//                 if (String(i).length==1 || String(j).length==1) {
+//                         result = `${i}x ${j}=${i*j}|`
+//                 } 
+//                 result = `${i}x${j}=${i*j}|`
+     
+//         }
+//         console.log(result2)
+//         }
+
+//   1   2   3   4   5   6   7 __8 __9  10
+//   2   4   6   8  10  12  14  16  18 _20
+// ...
+//  10  20  30  40  50  60  70  80 _90 100
+
+//Parametri
+const padding='0'
+const maxI=11
+const maxJ=11
+//-------
+
+
+let padLength
+let stringMax
+stringMax=""+maxI*maxJ
+padLength=stringMax.length
+for (let i = 1; i < maxI; i++) {
         let result = ""
-        let result2 = `Table of => (${j}) ` 
-        for (let i = 1; i < 11; i++) {
-                result = `${i}x${j} = ${i*j} |`
-                result2 += result
+        for (let j = 1; j < maxJ; j++) {
+                let k
+                k=""+(i*j)
+                while(k.length<padLength){
+                        k=padding+k
+                       // console.log(k)
+                }
+                result+=k+'\t'
+                
         }
-        console.log(result2)
-        }
+        console.log(result)
+
+}
