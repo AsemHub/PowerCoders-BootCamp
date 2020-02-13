@@ -85,9 +85,9 @@
 // for (let i = 0; i < 3; i++) {
 //         let row = "";
 //         // loops over columns
-       
-       
-       
+
+
+
 //         for (let j = 0; j < 7; j++) {
 //                 row += "*";
 //         }
@@ -106,7 +106,7 @@
 // console.log(rectangle);
 
 // for (let j = 0; j < 10; j++) {
-      
+
 //         let str = ""
 
 //         for (let i = 0; i < 10; i++) {
@@ -146,7 +146,7 @@
 //                         result = `${i}x ${j}=${i*j}|`
 //                 } 
 //                 result = `${i}x${j}=${i*j}|`
-     
+
 //         }
 //         console.log(result2)
 //         }
@@ -157,28 +157,81 @@
 //  10  20  30  40  50  60  70  80 _90 100
 
 //Parametri
-const padding='0'
-const maxI=11
-const maxJ=11
-//-------
+// function multiplecation(){
+// const padding='0'
+// const maxI=11
+// const maxJ=11
+// //-------
 
 
-let padLength
-let stringMax
-stringMax=""+maxI*maxJ
-padLength=stringMax.length
-for (let i = 1; i < maxI; i++) {
-        let result = ""
-        for (let j = 1; j < maxJ; j++) {
-                let k
-                k=""+(i*j)
-                while(k.length<padLength){
-                        k=padding+k
-                       // console.log(k)
-                }
-                result+=k+'\t'
-                
-        }
-        console.log(result)
+// let padLength
+// let stringMax
+// stringMax=""+maxI*maxJ
+// padLength=stringMax.length
+// for (let i = 1; i < maxI; i++) {
+//         let result = ""
+//         for (let j = 1; j < maxJ; j++) {
+//                 let k
+//                 k=""+(i*j)
+//                 while(k.length<padLength){
+//                         k=padding+k
+//                        // console.log(k)
+//                 }
+//                 result+=k+'\t'
 
-}
+//         }
+//         console.log(result)
+
+// }
+// }
+// function buildRow(columns) {
+//         let row = '';
+//         for (let i = 0; i < columns; i++){
+//                 row += '*';
+// }
+// return row;
+// }
+// let row = buildRow(5)
+// function buildButton(rows, columns){
+// let button = '';
+// for(let i = 0; i < rows; i++){
+//         button += buildRow(columns) + '\n';
+//    }
+// return button
+// }
+//         console.log(buildButton(3,5 ))
+
+// function ranking(dps) {
+//         let score
+//         switch (dps) {
+//                 case 1:
+//                         score = ("Good!")
+//                         break;
+//                 case 5:
+//                         score = ("Double kill!!")
+//                         break;
+//                 case 10:
+//                         score = ("Triple kill!!!")
+//                         break;
+//                 case 15:
+//                         score = ("Destroyer!")
+//                         break;
+//                 case 20:
+//                         score = ("You're a god dude")
+//         }
+
+//         return score;
+
+// }
+// console.log(ranking(5));7
+
+// let row = ''
+// let columns = ''
+// for (let i = 0; i < 11; i++) {
+//         row += "*"
+//         for (let j = 0; j < 1; j++)
+//         columns += "*"
+// }console.log(row)
+// console.log(`*  hello  *`)
+// console.log(row)
+
