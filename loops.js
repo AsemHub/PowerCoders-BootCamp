@@ -10,7 +10,6 @@
 // p--;
 // }
 
-
 // let i = 0
 // let string = ""
 // while (i < 16 ) {
@@ -25,13 +24,10 @@
 // }
 // console.log(`${string} ${'Batman!'}`)
 
-
-
 // let sum = ""
 // for (let i = 1; i<10; sum++){
-//     sum += "2" 
+//     sum += "2"
 // }console.log(sum)
-
 
 // for (let i = prompt('give a number greater than 100'); i > 100;) {
 //         if (i<100) {
@@ -46,7 +42,7 @@
 
 // for (let i = prompt('give a number greater than 100');
 // i&i <= 100;
-// i = prompt('please try again')) 
+// i = prompt('please try again'))
 // { }
 
 // let x=1;
@@ -64,7 +60,6 @@
 
 //     ++y;
 //    console.log(result);
-
 
 // for (let j=1; j<11; j++) {
 //         let result = ""
@@ -86,8 +81,6 @@
 //         let row = "";
 //         // loops over columns
 
-
-
 //         for (let j = 0; j < 7; j++) {
 //                 row += "*";
 //         }
@@ -97,10 +90,6 @@
 //         } else {
 //                 rectangle += row;
 //         }
-
-
-
-
 
 // }
 // console.log(rectangle);
@@ -118,7 +107,7 @@
 
 // for (let j=1; j<11; j++) {
 //         let result = ""
-//         let result2 = `Table of =>(${j})` 
+//         let result2 = `Table of =>(${j})`
 //         for (let i = 1; i < 11; i++) {
 //                 result = `${i}x${j}=${i*j}|`
 //                 result2 += result
@@ -136,15 +125,14 @@
 
 */
 
-
 // for (let j=1; j<11; j++) {
 //         let result = ""
-//         let result2 =`Table of => (${j})` 
+//         let result2 =`Table of => (${j})`
 //         for (let i = 1; i < 11; i++) {
 //                 result2 += result
 //                 if (String(i).length==1 || String(j).length==1) {
 //                         result = `${i}x ${j}=${i*j}|`
-//                 } 
+//                 }
 //                 result = `${i}x${j}=${i*j}|`
 
 //         }
@@ -162,7 +150,6 @@
 // const maxI=11
 // const maxJ=11
 // //-------
-
 
 // let padLength
 // let stringMax
@@ -225,13 +212,25 @@
 // }
 // console.log(ranking(5));7
 
-// let row = ''
-// let columns = ''
+// let row = "";
+// let columns = "";
 // for (let i = 0; i < 11; i++) {
-//         row += "*"
-//         for (let j = 0; j < 1; j++)
-//         columns += "*"
-// }console.log(row)
-// console.log(`*  hello  *`)
-// console.log(row)
+//   row += "*";
+//   for (let j = 0; j < 1; j++) columns += "*";
+// }
+// console.log(row);
+// console.log(`*  hello  *`);
+// console.log(row);
 
+// let weekDays = [
+//   "sunday",
+//   "monday",
+//   "tuesday",
+//   "wednesday",
+//   "thursday",
+//   "friday",
+//   "saturday"
+// ];
+// let today = new Date();
+// let day = today.getDay();
+// console.log(weekDays[day]);
