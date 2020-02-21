@@ -234,3 +234,179 @@
 // let today = new Date();
 // let day = today.getDay();
 // console.log(weekDays[day]);
+//Objects
+
+// let user = {};
+// user.name = "John";
+// user.surname = "Smith";
+// user.name = "Pete";
+// delete user.name;
+
+// console.log(user);
+
+// let user = {
+//   name: "John",
+//   go() {
+//     return this.name;
+//   }
+// };
+// console.log(user.go());
+
+// let calculator = {
+//   read() {
+//     this.a = prompt("First number?");
+//     this.b = prompt("Second number?");
+//     this.mul();
+//     this.sum();
+//   },
+//   sum() {
+//     return alert(+this.a + +this.b);
+//   },
+//   mul() {
+//     return alert(this.a * this.b);
+//   }
+// };
+// calculator.read();
+
+// let ladder = {
+//   step: 0,
+//   up() {
+//     this.step++;
+//     return this;
+//   },
+//   down() {
+//     this.step--;
+//     return this;
+//   },
+//   showStep: function() {
+//     // shows the current step
+//     alert(this.step);
+//     return this;
+//   }
+// };
+// ladder
+//   .up()
+//   .up()
+//   .up()
+//   .down()
+//   .showStep();
+
+// let fact = 6;
+// for (let index = fact - 1; index > 0; index--) {
+//   fact *= index;
+// }
+// console.log(fact);
+
+// let arrayName = [0, 1, 2, 4, 8];
+// function printAll(a) {
+//   for (let i = 0; i < a.length; i++) {
+//     console.log(a[i]);
+//   }
+// }
+// function double(a) {
+//   let arr = [];
+//   for (let i = 0; i < a.length; i++) {
+//     arr.push(a[i] * 2);
+//   }
+//   return arr;
+// }
+// console.log(double(arrayName));
+
+// function hasEvens(a) {
+//   for (let i = 0; i < a.length; i++) {
+//     let isEven = i % 2 === 0;
+//   }
+//   return isEven;
+// }
+// console.log printEven);
+
+// function areAllEven(arrayName) {
+//   let areAllEven = true;
+//   for (let item of arrayName) {
+//     if (!isEven(item)) {
+//       areAllEven = false;
+//     }
+//   }
+//   return areAllEven;
+// }
+
+// function printAll2(arrayName, n = 0) {
+//   for (let i = n; i < arrayName.length; i++) {
+//     console.log(arrayName[i]);
+//   }
+// }
+// let arr = ["khra klab", "ay kalam"];
+// printAll2(arr);
+// printAll2(numbers);
+// printAll2(numbers2);
+
+// numbers[0] = numbers[0] * 2;
+// numbers[1] = numbers[1] * 2;
+// numbers[2] = numbers[2] * 2;
+// numbers[3] = numbers[3] * 2;
+// numbers[4] = numbers[4] * 2;
+// numbers[5] = numbers[5] * 2;
+
+// function doubles(arr, n) {
+//   for (let i = 0; i < arr.length; i++) {
+//     console.log(arr[i] * n);
+//   }
+// }
+// console.log(doubles(numbers, 5));
+// console.log(numbers[0]);
+// console.log(numbers);
+
+// function sum(a) {
+//   console.log(a * 7);
+// }
+// // sum(3);
+
+// function area(width, height) {
+//   return width * height + "m²";
+// }
+// console.log(area(7.8, 9));
+
+// function person(Name, Height, Title) {
+//   return `your name is ${Name}
+// your height is ${Height}cm
+// your title is ${Title}`;
+// }
+// console.log(person("Sohayb", "1658", "Modir"));
+
+// let numbers = [3, 4, 5, 6, 8, 9];
+// let arr2 = [23, 56, 44, 3, 8, "asem"];
+
+// function duobled(arr, n = 1) {
+//   for (let i = 0; i < arr.length; i++) {
+//     let element = arr[i];
+//     if (typeof element == "number") {
+//       arr[i] *= n;
+//     }
+//   }
+// }
+// // duobled(numbers);
+
+// duobled(arr2, numbers, 5);
+// // console.log(arr2);
+// function printEven(arr) {
+//   let arr2 = [];
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] % 2 !== 0 && typeof arr[i] == "number") {
+//       arr2.push(arr[i]);
+//     }
+//   }
+//   return arr2;
+// }
+// let odds = printEven(arr2);
+// console.log(odds);
+
+let todos = [
+  { id: 1, text: "learn javascript" },
+  { id: 2, text: "seek for a job" },
+  { id: 3, text: "forget everything" }
+];
+
+function showTodos() {
+  return todos.map(todo => `<li>${todo.text}</li>`).join("");
+}
+document.querySelector("ul").innerHTML = showTodos();
