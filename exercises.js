@@ -487,3 +487,12 @@
 //   return sum;
 // }
 // console.log(multiplecation(salaries1));
+//   { id: 1, text: "learn javascript" },
+//   { id: 2, text: "seek for a job" },
+//   { id: 3, text: "forget everything" }
+// ];
+
+// function showTodos() {
+//   return todos.map(todo => `<li>${todo.text}</li>`).join("");
+// }
+// document.querySelector("ul").innerHTML = showTodos();
