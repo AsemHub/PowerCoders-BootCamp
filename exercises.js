@@ -400,13 +400,90 @@
 // let odds = printEven(arr2);
 // console.log(odds);
 
-let todos = [
-  { id: 1, text: "learn javascript" },
-  { id: 2, text: "seek for a job" },
-  { id: 3, text: "forget everything" }
-];
+// let todos = [
+//   { id: 1, text: "learn javascript", completed: true },
+//   { id: 2, text: "seek for a job", completed: false },
+//   { id: 3, text: "forget everything" }
+// ];
 
-function showTodos() {
-  return todos.map(todo => `<li>${todo.text}</li>`).join("");
-}
-document.querySelector("ul").innerHTML = showTodos();
+// function render() {
+//   document.querySelector("ul").innerHTML = todos
+//     .map(
+//       todo => `<li ${todo.completed ? 'class="done"' : ""}>${todo.text}</li>`
+//     )
+//     .join("");
+// }
+// render();
+// document.querySelector("form").onsubmit = function(event) {
+//   event.preventDefault();
+
+//   let id = generateId();
+//   let text = document.querySelector("input").value;
+
+//   todos.push({ id, text });
+
+//   document.querySelector("input").value = "";
+//   render();
+// };
+// function generatId() {
+//   if (todos.length === 0) {
+//     return 1;
+//   }
+//   let lastTodo = todos[todos.length - 1];
+//   let lastId = lastTodo.id;
+//   let newId = lastId + 1;
+//   return newId;
+// }
+// function generateId() {
+//   if (todos.length === 0) {
+//     return 1
+//   } else {
+//     return todos[todos.length - 1].id + 1
+//   }
+// }
+// function generateId() {
+//   return !todos.length ? 1 : todos[todos.length - 1].id + 1;
+// }
+
+// const albumX = ["one", "sing", "nina", "photoghraph", "i see fire"];
+// albumX.forEach(song => console.log(song));
+
+// const numbers = [1, 2, 3, 5, 4, 7, 9];
+// const isEven = num => num % 2 === 0;
+// console.log(numbers.filter(isEven));
+// const double = num => num * 2;
+// console.log(numbers.map(double));
+// const sum = (a, b) => a + b;
+// console.log(numbers.reduce(sum, 0));
+// let salaries = {
+//   John: 100,
+//   Ann: 160,
+//   Pete: 130
+// };
+// let salaries1 = {
+//   John: 655,
+//   Ann: 165,
+//   Pete: 1306
+// };
+// let salaries2 = {
+//   John: 100,
+//   Ann: 160,
+//   Pete: "zero"
+// };
+// function sumall(object) {
+//   let sum = 0;
+//   for (const i in object) {
+//     sum += object[i];
+//   }
+//   return sum;
+// }
+// console.log(sumall());
+
+// function multiplecation(object) {
+//   let sum = 0;
+//   for (const i in object) {
+//     sum = object[i] * 2;
+//   }
+//   return sum;
+// }
+// console.log(multiplecation(salaries1));
